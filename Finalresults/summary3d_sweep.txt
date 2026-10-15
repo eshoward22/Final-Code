@@ -1,0 +1,18 @@
+mesh: 534664 nodes, 519168 elements
+isotropic: V = 86.30 mm^3, spreads x/y/z = 5.6/5.6/5.0 mm, sphericity 0.997 (PCG 74 its, 4.1 s)
+kappa  2.0 theta  0: V =  86.42 mm^3 ( +0.1%), spreads 5.4/5.4/5.0 mm, Psi 0.993, Dice 0.974, eps_E 0.184, PCG 73 its
+kappa  2.0 theta 45: V =  87.70 mm^3 ( +1.6%), spreads 5.4/5.8/5.0 mm, Psi 0.995, Dice 0.972, eps_E 0.173, PCG 77 its
+kappa  2.0 theta 90: V =  88.95 mm^3 ( +3.1%), spreads 5.4/5.8/5.0 mm, Psi 0.994, Dice 0.966, eps_E 0.193, PCG 77 its
+kappa  4.4 theta  0: V =  90.45 mm^3 ( +4.8%), spreads 5.2/5.2/5.0 mm, Psi 0.962, Dice 0.917, eps_E 0.389, PCG 69 its
+kappa  4.4 theta 45: V =  93.89 mm^3 ( +8.8%), spreads 5.2/6.4/5.2 mm, Psi 0.969, Dice 0.913, eps_E 0.366, PCG 78 its
+kappa  4.4 theta 90: V =  96.91 mm^3 (+12.3%), spreads 5.2/6.2/4.8 mm, Psi 0.974, Dice 0.899, eps_E 0.396, PCG 82 its
+aspect ratio y/x (theta 90, kappa 4.4) for V0 = [1 2 3 4 5 6] V: [0.75 1.05 1.19 1.23 1.3 1.33] ; far-field limit kappa^(1/4) = 1.45
+kappa  7.0 theta  0: V =  94.60 mm^3 ( +9.6%), spreads 5.2/5.2/5.6 mm, Psi 0.912, Dice 0.872, eps_E 0.508, PCG 67 its
+kappa  7.0 theta 45: V =  99.99 mm^3 (+15.9%), spreads 5.0/7.0/5.6 mm, Psi 0.929, Dice 0.867, eps_E 0.474, PCG 80 its
+kappa  7.0 theta 90: V = 104.06 mm^3 (+20.6%), spreads 5.0/6.8/4.8 mm, Psi 0.939, Dice 0.849, eps_E 0.505, PCG 88 its
+kappa 10.0 theta  0: V =  98.53 mm^3 (+14.2%), spreads 5.0/5.0/6.2 mm, Psi 0.860, Dice 0.832, eps_E 0.598, PCG 65 its
+kappa 10.0 theta 45: V = 105.97 mm^3 (+22.8%), spreads 5.0/7.4/5.8 mm, Psi 0.885, Dice 0.826, eps_E 0.554, PCG 82 its
+kappa 10.0 theta 90: V = 110.74 mm^3 (+28.3%), spreads 5.0/7.4/4.8 mm, Psi 0.898, Dice 0.807, eps_E 0.582, PCG 94 its
+theta  0: volume change reaches 10% at kappa* = 7.24 ; Dice < 0.9 for kappa > 5.27
+theta 45: volume change reaches 10% at kappa* = 4.8 ; Dice < 0.9 for kappa > 5.05
+theta 90: volume change reaches 10% at kappa* = 3.8 ; Dice < 0.9 for kappa > 4.36
