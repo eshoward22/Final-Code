@@ -34,4 +34,4 @@ No modification of file paths or source code is required.
 
 ## Results
 
-Generated figures and numerical results are saved in the `Finalresults` directory.
+The code generates figures and numerical results in the `Finalresults` directory during execution. Example outputs from the final project run are also included in this repository.
