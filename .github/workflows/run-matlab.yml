@@ -1,21 +1,22 @@
-name: Run MATLAB Project
+name: Execute Project
 
 on:
   push:
   workflow_dispatch:
 
 jobs:
-  run-matlab:
+  execute:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up MATLAB
-        uses: matlab-actions/setup-matlab@v3
+      - name: Install GNU Octave
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y octave
 
-      - name: Run project
-        uses: matlab-actions/run-command@v3
-        with:
-          command: run_all
+      - name: Execute project
+        run: |
+          octave --no-gui --quiet run_all.m
