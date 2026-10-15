@@ -1,7 +1,7 @@
 % ----- Runs the whole project ------
 %  Results and figures go into results 
 
-addpath('/Users/sarahmitchell/Desktop/Semester3.2/Biomathematics 379/Final/FinalCode')
+addpath(fileparts(mfilename('fullpath')))
 % ...
 
 part1_2d5          % 2D model, numerical error analysis    (Table 2, Figure 3)
