@@ -1,7 +1,9 @@
 % ----- Runs the whole project ------
 %  Results and figures go into results 
 
-addpath(fileparts(mfilename('fullpath')))
+projectFolder = fileparts(mfilename('fullpath'));
+cd(projectFolder);
+addpath(projectFolder);
 % ...
 
 part1_2d5          % 2D model, numerical error analysis    (Table 2, Figure 3)
