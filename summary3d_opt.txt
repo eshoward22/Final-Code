@@ -1,0 +1,32 @@
+|T| = 55.8 mm^3, |A| = 105.0 mm^3 (voxel counts)
+model isotropic            solved
+model kappa 4.4, theta 0   solved
+model kappa 4.4, theta 45  solved
+model kappa 4.4, theta 90  solved
+model kappa 10, theta 90   solved
+
+=== Optimal settings (lambda = 1) ===
+isotropic           : contact 1, V0 = 4.45 V, coverage 90.2%, spill 9.2%, overspill(Cubo) 67.5%, VTA 154.9 mm^3, J = 0.811
+kappa 4.4, theta 0  : contact 1, V0 = 4.10 V, coverage 93.4%, spill 4.9%, overspill(Cubo) 63.7%, VTA 143.7 mm^3, J = 0.885
+kappa 4.4, theta 45 : contact 2, V0 = 3.95 V, coverage 91.6%, spill 10.9%, overspill(Cubo) 64.3%, VTA 143.2 mm^3, J = 0.807
+kappa 4.4, theta 90 : contact 1, V0 = 3.15 V, coverage 78.1%, spill 6.9%, overspill(Cubo) 58.4%, VTA 104.7 mm^3, J = 0.711
+kappa 10, theta 90  : contact 1, V0 = 2.70 V, coverage 71.7%, spill 7.9%, overspill(Cubo) 56.8%, VTA 92.6 mm^3, J = 0.637
+
+=== Isotropic optimum evaluated in anisotropic tissue ===
+lambda 0.5, kappa 4.4, theta 0  : iso optimum (c1, 5.00 V) gives coverage 97.4%, spill 11.0%, J = 0.919; anisotropic optimum J = 0.921 (loss 0.002)
+lambda 0.5, kappa 4.4, theta 45 : iso optimum (c1, 5.00 V) gives coverage 93.1%, spill 22.4%, J = 0.820; anisotropic optimum J = 0.870 (loss 0.051)
+lambda 0.5, kappa 4.4, theta 90 : iso optimum (c1, 5.00 V) gives coverage 92.3%, spill 30.9%, J = 0.769; anisotropic optimum J = 0.775 (loss 0.006)
+lambda 0.5, kappa 10, theta 90  : iso optimum (c1, 5.00 V) gives coverage 91.1%, spill 37.4%, J = 0.725; anisotropic optimum J = 0.725 (loss 0.000)
+lambda 1.0, kappa 4.4, theta 0  : iso optimum (c1, 4.45 V) gives coverage 95.2%, spill 7.0%, J = 0.882; anisotropic optimum J = 0.885 (loss 0.003)
+lambda 1.0, kappa 4.4, theta 45 : iso optimum (c1, 4.45 V) gives coverage 89.3%, spill 16.1%, J = 0.732; anisotropic optimum J = 0.807 (loss 0.075)
+lambda 1.0, kappa 4.4, theta 90 : iso optimum (c1, 4.45 V) gives coverage 89.2%, spill 23.7%, J = 0.656; anisotropic optimum J = 0.711 (loss 0.056)
+lambda 1.0, kappa 10, theta 90  : iso optimum (c1, 4.45 V) gives coverage 87.9%, spill 32.0%, J = 0.558; anisotropic optimum J = 0.637 (loss 0.079)
+lambda 2.0, kappa 4.4, theta 0  : iso optimum (c1, 3.55 V) gives coverage 87.8%, spill 2.3%, J = 0.832; anisotropic optimum J = 0.842 (loss 0.010)
+lambda 2.0, kappa 4.4, theta 45 : iso optimum (c1, 3.55 V) gives coverage 80.8%, spill 7.5%, J = 0.658; anisotropic optimum J = 0.735 (loss 0.077)
+lambda 2.0, kappa 4.4, theta 90 : iso optimum (c1, 3.55 V) gives coverage 82.1%, spill 11.4%, J = 0.592; anisotropic optimum J = 0.666 (loss 0.073)
+lambda 2.0, kappa 10, theta 90  : iso optimum (c1, 3.55 V) gives coverage 81.0%, spill 21.7%, J = 0.376; anisotropic optimum J = 0.591 (loss 0.215)
+isotropic           : spill exceeds 1% on contact 1 above V0 = 2.90 V
+kappa 4.4, theta 0  : spill exceeds 1% on contact 1 above V0 = 3.15 V
+kappa 4.4, theta 45 : spill exceeds 1% on contact 1 above V0 = 2.45 V
+kappa 4.4, theta 90 : spill exceeds 1% on contact 1 above V0 = 2.45 V
+kappa 10, theta 90  : spill exceeds 1% on contact 1 above V0 = 2.10 V

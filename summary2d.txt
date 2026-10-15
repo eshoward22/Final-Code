@@ -1,0 +1,51 @@
+
+=== A. Manufactured solution (kappa = 4.4) ===
+h =  0.400  max error = 4.339e-02
+h =  0.200  max error = 1.184e-02   observed order p = 1.87
+h =  0.100  max error = 2.874e-03   observed order p = 2.04
+h =  0.050  max error = 7.527e-04   observed order p = 1.93
+h =  0.025  max error = 1.922e-04   observed order p = 1.97
+
+=== B. Isotropic VTA area vs analytic (R = 12 mm) ===
+analytic r_th = 3.4025 mm, area (incl. electrode) = 36.3697 mm^2
+h =  0.400  A_ray = 36.3448 (err 2.49e-02)   A_vox = 33.9200 (err 1.18e+00)   A_ray(aniso) = 47.0817
+h =  0.200  A_ray = 36.3838 (err 1.41e-02)   A_vox = 34.8800 (err 2.23e-01)   A_ray(aniso) = 47.6769
+h =  0.100  A_ray = 36.3719 (err 2.23e-03)   A_vox = 35.1200 (err 1.71e-02)   A_ray(aniso) = 47.6136
+h =  0.050  A_ray = 36.3707 (err 9.87e-04)   A_vox = 35.1400 (err 3.71e-02)   A_ray(aniso) = 47.6164
+h =  0.025  A_ray = 36.3700 (err 2.50e-04)   A_vox = 35.1150 (err 1.21e-02)   A_ray(aniso) = 47.6179
+anisotropic area, observed orders p from successive triples: [3.23 4.47 0.93]
+Richardson-extrapolated anisotropic area = 47.6184 mm^2 ; error estimate of finest grid = 4.99e-04
+least-squares slope of log(error) vs log(h): ray method 1.71, voxel count 1.58
+
+=== C. Composite trapezium rule over rays (h = 0.05) ===
+M =    4 rays: |A_M - A_1024| = 9.15e+00
+M =    8 rays: |A_M - A_1024| = 3.30e+00
+M =   16 rays: |A_M - A_1024| = 1.16e-01
+M =   32 rays: |A_M - A_1024| = 1.56e-03
+M =   64 rays: |A_M - A_1024| = 1.06e-04
+M =  128 rays: |A_M - A_1024| = 3.88e-04
+
+=== D. Central difference for E: truncation vs round-off ===
+optimal h (theory) = 2.92e-05 mm ; observed minimum error 6.72e-13 at h = 3.16e-06 mm
+error at the grid spacing used (h = 0.1 mm): 5.71e-05 V/mm (truncation dominated)
+
+=== E. Condition number of the FD matrix (R = 12 mm) ===
+h = 0.80, kappa = 1.0 : cond_1(A) ~ 7.01e+02 ; bound cond*eps = 1.6e-13
+h = 0.80, kappa = 4.4 : cond_1(A) ~ 1.01e+03 ; bound cond*eps = 2.2e-13
+h = 0.40, kappa = 1.0 : cond_1(A) ~ 9.80e+03 ; bound cond*eps = 2.2e-12
+h = 0.40, kappa = 4.4 : cond_1(A) ~ 1.48e+04 ; bound cond*eps = 3.3e-12
+h = 0.20, kappa = 1.0 : cond_1(A) ~ 2.30e+04 ; bound cond*eps = 5.1e-12
+h = 0.20, kappa = 4.4 : cond_1(A) ~ 3.40e+04 ; bound cond*eps = 7.5e-12
+
+=== F. Domain size (h = 0.2 mm) ===
+R =  12 mm: iso 35.12 mm^2 (analytic 35.10), aniso 46.41 mm^2, change +32.2%
+R =  24 mm: iso 22.57 mm^2 (analytic 22.55), aniso 32.22 mm^2, change +42.8%
+R =  48 mm: iso 15.55 mm^2 (analytic 15.53), aniso 22.06 mm^2, change +41.8%
+R =  96 mm: iso 11.22 mm^2 (analytic 11.21), aniso 15.59 mm^2, change +38.9%
+
+=== G. Main 2D comparison (R = 48 mm, h = 0.1 mm, V0 = 2 V, kappa = 4.4) ===
+area: iso 15.53, aniso 22.04 mm^2 (+41.9%)
+spread along fibres (x): iso 4.63, aniso 4.31 mm (-6.9%)
+spread across fibres (y): iso 4.63, aniso 5.00 mm (+8.1%)
+aspect ratio x/y: iso 1.00, aniso 0.86 ; Dice = 0.821 ; eps_E = 0.512
+aspect ratio vs V0 [2 3 5 8 12] V: [0.86 0.95 1.01 1.07 1.16]  (2D far-field limit of the |E| contour = 1; isopotentials -> sqrt(kappa) = 2.10)
