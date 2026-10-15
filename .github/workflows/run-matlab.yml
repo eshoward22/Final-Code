@@ -20,3 +20,9 @@ jobs:
       - name: Execute project
         run: |
           octave --no-gui --quiet run_all.m
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Finalresults
+          path: Finalresults/
